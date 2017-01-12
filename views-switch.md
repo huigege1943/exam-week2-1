@@ -1,0 +1,23 @@
+# Intent 的 flags 列表及理解
+
+## Intent几种常见的flags：
+
+**FLAG_ACTIVITY_NEW_TASK**
+
+当Intent对象包含这个标记时，系统会寻找或创建一个新的task来放置目标Activity，寻找时依据目标Activity的taskAffinity属性进行匹配，如果找到一个task的taskAffinity与之相同，就将目标Activity压入此task中，如果查找无果，则创建一个新的task，并将该task的taskAffinity设置为目标Activity的taskActivity，将目标Activity放置于此task。
+
+**FLAG_ACTIVITY_CLEAR_TOP**
+
+当Intent对象包含这个标记时，如果在栈中发现存在Activity实例，则清空这个实例之上的Activity，使其处于栈顶。
+
+**FLAG_ACTIVITY_SINGLE_TOP**
+
+当task中存在目标Activity实例并且位于栈的顶端时，不再创建一个新的，直接利用这个实例。
+
+**FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET**
+
+如果一个Intent中包含此属性，则它转向的那个Activity以及在那个Activity其上的所有Activity都会在task重置时被清除出task。当我们将一个后台的task重新回到前台时，系统会在特定情况下为这个动作附带一个FLAG_ACTIVITY_RESET_TASK_IF_NEEDED标记，意味着必要时重置task，这时FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET就会生效。经过测试发现，对于一个处于后台的应用，如果在主选单点击应用，这个动作中含有FLAG_ACTIVITY_RESET_TASK_IF_NEEDED标记，长按Home键，然后点击最近记录，这个动作不含FLAG_ACTIVITY_RESET_TASK_IF_NEEDED标记,所以前者会清除，后者不会。
+
+**FLAG_ACTIVITY_RESET_TASK_IF_NEEDED**
+
+这个标记在以下情况下会生效：1.启动Activity时创建新的task来放置Activity实例；2.已存在的task被放置于前台。系统会根据affinity对指定的task进行重置操作，task会压入某些Activity实例或移除某些Activity实例。
