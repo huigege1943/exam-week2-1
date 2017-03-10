@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<body>
+<div style="text-align:center;">
+<input type="button" id="btn1" value="设置" onclick="javascript:toSetting();" /><br />
+<input type="button" id="btn2" value="API呼叫" onclick="javascript:api();" /><br />
+<textarea id="text1" cols=40 rows=4 value=""></textarea><br />
+<textarea id="text2" cols=40 rows=4 value=""></textarea><br />
+</div>
+<script>
+function toSetting()
+{
+ javascript:jsInterface2.toSetting();
+}
+function api()
+{
+ javascript:jsInterface2.api();
+}
+function getLink(str)
+{
+    document.getElementById("text1").value = str;
+}
+function getContent(str1)
+{
+    document.getElementById("text2").value = str1;
+}
+</script>
+</body>
+</html>
