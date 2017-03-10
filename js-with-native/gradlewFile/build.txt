@@ -1,0 +1,85 @@
+To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/2.14.1/userguide/gradle_daemon.html.
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:checkDebugManifest
+:app:preReleaseBuild UP-TO-DATE
+:app:prepareComAndroidSupportAnimatedVectorDrawable2421Library
+:app:prepareComAndroidSupportAppcompatV72421Library
+:app:prepareComAndroidSupportSupportCompat2421Library
+:app:prepareComAndroidSupportSupportCoreUi2421Library
+:app:prepareComAndroidSupportSupportCoreUtils2421Library
+:app:prepareComAndroidSupportSupportFragment2421Library
+:app:prepareComAndroidSupportSupportMediaCompat2421Library
+:app:prepareComAndroidSupportSupportV42421Library
+:app:prepareComAndroidSupportSupportVectorDrawable2421Library
+:app:prepareComSquareupLeakcanaryLeakcanaryAndroid15Library
+:app:prepareDebugDependencies
+:app:compileDebugAidl
+:app:compileDebugRenderscript
+:app:generateDebugBuildConfig
+:app:generateDebugResValues
+:app:generateDebugResources
+:app:mergeDebugResources
+:app:processDebugManifest
+:app:processDebugResources
+:app:generateDebugSources
+:app:incrementalDebugJavaCompilationSafeguard
+:app:compileDebugJavaWithJavac
+:app:compileDebugJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileDebugNdk UP-TO-DATE
+:app:compileDebugSources
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:transformClassesWithDexForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForDebug
+:app:processDebugJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+:app:checkReleaseManifest
+:app:preDebugUnitTestBuild UP-TO-DATE
+:app:preReleaseUnitTestBuild UP-TO-DATE
+:app:prepareComSquareupLeakcanaryLeakcanaryAndroidNoOp15Library
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl
+:app:compileReleaseRenderscript
+:app:generateReleaseBuildConfig
+:app:generateReleaseResValues
+:app:generateReleaseResources
+:app:mergeReleaseResources
+:app:processReleaseManifest
+:app:processReleaseResources
+:app:generateReleaseSources
+:app:incrementalReleaseJavaCompilationSafeguard
+:app:compileReleaseJavaWithJavac
+:app:compileReleaseJavaWithJavac - is not incremental (e.g. outputs have changed, no previous execution, etc.).
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources
+:app:lintVitalRelease
+:app:mergeReleaseShaders
+:app:compileReleaseShaders
+:app:generateReleaseAssets
+:app:mergeReleaseAssets
+:app:transformClassesWithDexForRelease
+:app:mergeReleaseJniLibFolders
+:app:transformNative_libsWithMergeJniLibsForRelease
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease
+:app:packageRelease
+:app:assembleRelease
+:app:assemble
+:app:lint
+Ran lint on variant debug: 9 issues found
+Ran lint on variant release: 9 issues found
+Wrote HTML report to file:///E:/GitHub/exam-week2-1/js-with-native/app/build/outputs/lint-results-debug.html
+Wrote XML report to file:///E:/GitHub/exam-week2-1/js-with-native/app/build/outputs/lint-results-debug.xml
+:app:lint FAILED
+
+BUILD FAILED
+
+Total time: 45.525 secs

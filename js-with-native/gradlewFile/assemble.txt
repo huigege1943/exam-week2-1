@@ -1,0 +1,48 @@
+To honour the JVM settings for this build a new JVM will be forked. Please consider using the daemon: https://docs.gradle.org/2.14.1/userguide/gradle_daemon.html.
+Incremental java compilation is an incubating feature.
+:app:preBuild UP-TO-DATE
+:app:preReleaseBuild UP-TO-DATE
+:app:checkReleaseManifest
+:app:preDebugBuild UP-TO-DATE
+:app:prepareComAndroidSupportAnimatedVectorDrawable2421Library UP-TO-DATE
+:app:prepareComAndroidSupportAppcompatV72421Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportCompat2421Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportCoreUi2421Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportCoreUtils2421Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportFragment2421Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportMediaCompat2421Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportV42421Library UP-TO-DATE
+:app:prepareComAndroidSupportSupportVectorDrawable2421Library UP-TO-DATE
+:app:preDebugUnitTestBuild UP-TO-DATE
+:app:preReleaseUnitTestBuild UP-TO-DATE
+:app:prepareComSquareupLeakcanaryLeakcanaryAndroidNoOp15Library UP-TO-DATE
+:app:prepareReleaseDependencies
+:app:compileReleaseAidl UP-TO-DATE
+:app:compileReleaseRenderscript UP-TO-DATE
+:app:generateReleaseBuildConfig UP-TO-DATE
+:app:generateReleaseResValues UP-TO-DATE
+:app:generateReleaseResources UP-TO-DATE
+:app:mergeReleaseResources UP-TO-DATE
+:app:processReleaseManifest UP-TO-DATE
+:app:processReleaseResources UP-TO-DATE
+:app:generateReleaseSources UP-TO-DATE
+:app:incrementalReleaseJavaCompilationSafeguard UP-TO-DATE
+:app:compileReleaseJavaWithJavac UP-TO-DATE
+:app:compileReleaseNdk UP-TO-DATE
+:app:compileReleaseSources UP-TO-DATE
+:app:lintVitalRelease
+:app:mergeReleaseShaders UP-TO-DATE
+:app:compileReleaseShaders UP-TO-DATE
+:app:generateReleaseAssets UP-TO-DATE
+:app:mergeReleaseAssets UP-TO-DATE
+:app:transformClassesWithDexForRelease UP-TO-DATE
+:app:mergeReleaseJniLibFolders UP-TO-DATE
+:app:transformNative_libsWithMergeJniLibsForRelease UP-TO-DATE
+:app:processReleaseJavaRes UP-TO-DATE
+:app:transformResourcesWithMergeJavaResForRelease UP-TO-DATE
+:app:packageRelease UP-TO-DATE
+:app:assembleRelease
+
+BUILD SUCCESSFUL
+
+Total time: 16.007 secs
